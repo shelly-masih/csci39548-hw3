@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="">
+  <div class="container-fluid text-left px-0">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <input id="res" class="form-control result-display" type="text" style="width: 760px" readonly>
+      </div>
+    </div>
+
+    <div class="row">
+      <div ckass="col">
+        <input type ="button" class="btn btn-outline-dark long-button" value="Rad|Deg">
+        <input type="button" class="btn btn-outline-dark calc-button" value="x!" onclick= "Solve('!')">
+        <input type="button" class="btn btn-outline-dark calc-button" value="(">
+        <input type="button" class="btn btn-outline-dark calc-button" value=")">
+        <input type="button" class="btn btn-outline-dark calc-button" value="%" onclick="Solve('%')">
+        <input type="button" class="btn btn-outline-dark calc-button clear-button" value="AC" onclick="Clear()">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="Inv">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="sin">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="ln">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="7" onclick="Solve('7')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="8" onclick="Solve('8')">
+        <input type ="button"class="btn btn-outline-dark calc-button middle" value="9" onclick="Solve('9')">
+        <input type ="button" class="btn btn-primary calc-button" value="/" onclick="Solve('/')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="pi">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="cos">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="log">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="4" onclick="Solve('4')" >
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="5" onclick="Solve('5')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="6" onclick="Solve('6')">
+        <input type ="button" class="btn btn-primary calc-button" value="x" onclick="Solve('*')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="e" >
+        <input type ="button" class="btn btn-outline-dark calc-button" value="tan">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="sqrt" onclick="Solve('Sqrt->')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="1" onclick="Solve('1')" >
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="2" onclick="Solve('2')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="3" onclick="Solve('3')">
+        <input type ="button" class="btn btn-primary calc-button" value="-" onclick="Solve('-')">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="Ans">
+        <input type ="button" class="btn btn-outline-dark calc-button" value="EXP" onclick="Solve('E')">
+        <input type="button" class="btn btn-outline-dark calc-button" value="x^n" onclick="Solve('^')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="0" onclick="Solve('0')">
+        <input type ="button" class="btn btn-outline-dark calc-button middle" value="." onclick="Solve('.')">
+        <input type ="button" class="btn btn-primary calc-button bluebutton" value="=" onclick="Result()">
+        <input type ="button" class="btn btn-primary calc-button" value="+" onclick="Solve('+')">
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
